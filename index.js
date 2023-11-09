@@ -10,7 +10,7 @@ const app = express();
 db();
 
 app.use(cors({
-     origin: process.env.CLIENT_URL,
+     origin: process.env.PRODUCTION_URL,
      credentials: true,
 }));
 app.use(bodyparser.json({ limit: "20mb" }));
